@@ -1,0 +1,5 @@
+/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP-mulimedia/TD5-Kris/CMakeFiles/td.dir
+/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP-mulimedia/TD5-Kris/CMakeFiles/check.dir
+/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP-mulimedia/TD5-Kris/CMakeFiles/test.dir
+/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP-mulimedia/TD5-Kris/CMakeFiles/edit_cache.dir
+/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP-mulimedia/TD5-Kris/CMakeFiles/rebuild_cache.dir

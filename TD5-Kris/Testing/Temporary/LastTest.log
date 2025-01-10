@@ -1,0 +1,19 @@
+Start testing: Jan 10 15:30 CET
+----------------------------------------------------------
+1/1 Testing: SimpleTest
+1/1 Test: SimpleTest
+Command: "/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP-mulimedia/TD5-Kris/td"
+Directory: /home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP-mulimedia/TD5-Kris
+"SimpleTest" start time: Jan 10 15:30 CET
+Output:
+----------------------------------------------------------
+39520.00447504
+<end of output>
+Test time =   3.33 sec
+----------------------------------------------------------
+Test Passed.
+"SimpleTest" end time: Jan 10 15:30 CET
+"SimpleTest" time elapsed: 00:00:03
+----------------------------------------------------------
+
+End testing: Jan 10 15:30 CET

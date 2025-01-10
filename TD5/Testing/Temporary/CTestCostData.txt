@@ -1,3 +1,0 @@
-SimpleTest 1 0
----
-SimpleTest

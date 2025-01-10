@@ -1,5 +1,0 @@
-/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/CMakeFiles/td.dir
-/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/CMakeFiles/check.dir
-/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/CMakeFiles/test.dir
-/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/CMakeFiles/edit_cache.dir
-/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/CMakeFiles/rebuild_cache.dir
