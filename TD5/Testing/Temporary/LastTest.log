@@ -1,0 +1,18 @@
+Start testing: Jan 10 15:09 CET
+----------------------------------------------------------
+1/1 Testing: SimpleTest
+1/1 Test: SimpleTest
+Command: "/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/td"
+Directory: /home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5
+"SimpleTest" start time: Jan 10 15:09 CET
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Failed.
+"SimpleTest" end time: Jan 10 15:09 CET
+"SimpleTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jan 10 15:09 CET

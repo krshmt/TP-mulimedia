@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/build",
+  "command": "/usr/bin/g++ -I/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/build -isystem /usr/include/opencv4   -DGLEW_STATIC -g   -std=c++17 -o CMakeFiles/td.dir/GLError.cpp.o -c /home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/GLError.cpp",
+  "file": "/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/GLError.cpp",
+  "output": "CMakeFiles/td.dir/GLError.cpp.o"
+},
+{
+  "directory": "/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/build",
+  "command": "/usr/bin/g++ -I/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/build -isystem /usr/include/opencv4   -DGLEW_STATIC -g   -std=c++17 -o CMakeFiles/td.dir/repere.cpp.o -c /home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/repere.cpp",
+  "file": "/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/repere.cpp",
+  "output": "CMakeFiles/td.dir/repere.cpp.o"
+},
+{
+  "directory": "/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/build",
+  "command": "/usr/bin/g++ -I/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/build -isystem /usr/include/opencv4   -DGLEW_STATIC -g   -std=c++17 -o CMakeFiles/td.dir/td5.cpp.o -c /home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/td5.cpp",
+  "file": "/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP5/canevasTD5/td5.cpp",
+  "output": "CMakeFiles/td.dir/td5.cpp.o"
+}
+]
