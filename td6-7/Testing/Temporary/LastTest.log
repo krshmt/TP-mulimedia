@@ -1,0 +1,19 @@
+Start testing: Jan 15 11:56 CET
+----------------------------------------------------------
+1/1 Testing: SimpleTest
+1/1 Test: SimpleTest
+Command: "/home/iut45/Etudiants/o22202749/Téléchargements/td6-7/td"
+Directory: /home/iut45/Etudiants/o22202749/Téléchargements/td6-7
+"SimpleTest" start time: Jan 15 11:56 CET
+Output:
+----------------------------------------------------------
+0.004475040.04907730.003594966.42372
+<end of output>
+Test time =  30.74 sec
+----------------------------------------------------------
+Test Passed.
+"SimpleTest" end time: Jan 15 11:57 CET
+"SimpleTest" time elapsed: 00:00:30
+----------------------------------------------------------
+
+End testing: Jan 15 11:57 CET

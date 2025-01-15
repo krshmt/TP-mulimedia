@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/iut45/Etudiants/o22202749/Téléchargements/td6-7/build",
+  "command": "/usr/bin/g++ -I/home/iut45/Etudiants/o22202749/Téléchargements/td6-7/build -isystem /usr/include/opencv4   -DGLEW_STATIC -g   -std=c++17 -o CMakeFiles/td.dir/GLError.cpp.o -c /home/iut45/Etudiants/o22202749/Téléchargements/td6-7/GLError.cpp",
+  "file": "/home/iut45/Etudiants/o22202749/Téléchargements/td6-7/GLError.cpp",
+  "output": "CMakeFiles/td.dir/GLError.cpp.o"
+},
+{
+  "directory": "/home/iut45/Etudiants/o22202749/Téléchargements/td6-7/build",
+  "command": "/usr/bin/g++ -I/home/iut45/Etudiants/o22202749/Téléchargements/td6-7/build -isystem /usr/include/opencv4   -DGLEW_STATIC -g   -std=c++17 -o CMakeFiles/td.dir/repere.cpp.o -c /home/iut45/Etudiants/o22202749/Téléchargements/td6-7/repere.cpp",
+  "file": "/home/iut45/Etudiants/o22202749/Téléchargements/td6-7/repere.cpp",
+  "output": "CMakeFiles/td.dir/repere.cpp.o"
+},
+{
+  "directory": "/home/iut45/Etudiants/o22202749/Téléchargements/td6-7/build",
+  "command": "/usr/bin/g++ -I/home/iut45/Etudiants/o22202749/Téléchargements/td6-7/build -isystem /usr/include/opencv4   -DGLEW_STATIC -g   -std=c++17 -o CMakeFiles/td.dir/td6.cpp.o -c /home/iut45/Etudiants/o22202749/Téléchargements/td6-7/td6.cpp",
+  "file": "/home/iut45/Etudiants/o22202749/Téléchargements/td6-7/td6.cpp",
+  "output": "CMakeFiles/td.dir/td6.cpp.o"
+}
+]
