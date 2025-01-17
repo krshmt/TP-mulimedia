@@ -26,7 +26,7 @@ void main( void )
     vec3 N = normalize(out_normal);
 
     float intensity = max(dot(N, L), 0.0);
-    vec4 final_color = vec4(0.6,0.2,0.2, 1.0);
+    vec4 final_color = vec4(0.6,0.1,0.1, 1.0);
     vec3 E = normalize(eyeVec);
     vec3 R = reflect(-L, N);
     float specular = pow(max(dot(R, E), 0.0),2);

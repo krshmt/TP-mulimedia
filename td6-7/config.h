@@ -6,5 +6,5 @@
 // or explicit are given
 //////////////////////////////////////////////////////////////////////
 
-#define MY_SHADER_PATH "/home/iut45/Etudiants/o22202749/Téléchargements/td6-7"
+#define MY_SHADER_PATH "/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP-mulimedia/td6-7"
 #define MY_MESHES_PATH "" 

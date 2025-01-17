@@ -1,6 +1,5 @@
 #version 150 core
 
-// couleur émise pour le pixel
 in vec4 color;
 in vec3 eyeVec;
 in vec3 lightDir;

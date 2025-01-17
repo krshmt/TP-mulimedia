@@ -1,19 +1,19 @@
-Start testing: Jan 15 11:56 CET
+Start testing: Jan 17 14:48 CET
 ----------------------------------------------------------
 1/1 Testing: SimpleTest
 1/1 Test: SimpleTest
-Command: "/home/iut45/Etudiants/o22202749/Téléchargements/td6-7/td"
-Directory: /home/iut45/Etudiants/o22202749/Téléchargements/td6-7
-"SimpleTest" start time: Jan 15 11:56 CET
+Command: "/home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP-mulimedia/td6-7/td"
+Directory: /home/iut45/Etudiants/o22202749/WinHome/Multimedia/TP-mulimedia/td6-7
+"SimpleTest" start time: Jan 17 14:48 CET
 Output:
 ----------------------------------------------------------
-0.004475040.04907730.003594966.42372
+0.008950080.09815470.0071899312.8474
 <end of output>
-Test time =  30.74 sec
+Test time =  37.42 sec
 ----------------------------------------------------------
 Test Passed.
-"SimpleTest" end time: Jan 15 11:57 CET
-"SimpleTest" time elapsed: 00:00:30
+"SimpleTest" end time: Jan 17 14:48 CET
+"SimpleTest" time elapsed: 00:00:37
 ----------------------------------------------------------
 
-End testing: Jan 15 11:57 CET
+End testing: Jan 17 14:48 CET

@@ -148,34 +148,31 @@ void calcTime()
     lastTime = getMilliCount();
 }
 
-void displayMesh(maillage maillage, glm::mat4 modelMatrix)
+void displayMesh(const maillage& mesh, const glm::mat4& modelMatrix)
 {
-    glUseProgram(maillage.shader.progid);
+    glUseProgram(mesh.shader.progid);
 
-    model = modelMatrix;
+    glm::mat4 model = modelMatrix;
+    model = glm::scale(model, glm::vec3(mesh.scale));
+    model = glm::translate(model, glm::vec3(-mesh.x, -mesh.y, -mesh.z));
 
-    model = model * glm::scale(glm::mat4(1.0f), glm::vec3(maillage.scale));
-    model = model * glm::translate(glm::mat4(1.0f), glm::vec3(-maillage.x, -maillage.y, -maillage.z));
+    glm::mat4 mvp = proj * view * model;
 
-    mvp = proj * view * model;
+    glUniformMatrix4fv(mesh.shader.LightID, 1, GL_FALSE, &mvp[0][0]);
+    glUniformMatrix4fv(mesh.shader.vid, 1, GL_FALSE, &view[0][0]);
+    glUniformMatrix4fv(mesh.shader.mid, 1, GL_FALSE, &model[0][0]);
+    glUniformMatrix4fv(mesh.shader.pid, 1, GL_FALSE, &proj[0][0]);
 
-    glUniformMatrix4fv(maillage.shader.LightID, 1, GL_FALSE, &mvp[0][0]);
-    glUniformMatrix4fv(maillage.shader.vid, 1, GL_FALSE, &view[0][0]);
-    glUniformMatrix4fv(maillage.shader.mid, 1, GL_FALSE, &model[0][0]);
-    glUniformMatrix4fv(maillage.shader.pid, 1, GL_FALSE, &proj[0][0]);
+    glBindVertexArray(mesh.vaoids);
 
-    glBindVertexArray(maillage.vaoids);
-
-    glDrawElements(GL_TRIANGLES, maillage.nbtriangles * 3, GL_UNSIGNED_INT, 0);
+    glDrawElements(GL_TRIANGLES, mesh.nbtriangles * 3, GL_UNSIGNED_INT, 0);
 
     glBindVertexArray(0);
 
     glUseProgram(0);
 }
 
-void display()
-{
-
+void display() {
     calcTime();
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -183,28 +180,30 @@ void display()
 
     float decal = 1.0f;
 
-    model = glm::mat4(1.0f);
-    model = glm::translate(model, glm::vec3(-decal, -decal, 0.0f));
-    model = glm::rotate(model, glm::degrees(maillages[0].angle), glm::vec3(1.0f, 1.0f, 1.0f));
-    displayMesh(maillages[0], model);
+    glm::vec3 translations[] = {
+        glm::vec3(-decal, -decal, 0.0f),
+        glm::vec3(decal, decal, 0.0f),
+        glm::vec3(-decal, decal, 0.0f),
+        glm::vec3(decal, -decal, 0.0f)
+    };
 
-    model = glm::mat4(1.0f);
-    model = glm::translate(model, glm::vec3(decal, decal, 0.0f));
-    model = glm::rotate(model, glm::degrees(maillages[1].angle), glm::vec3(0.0f, 1.0f, 0.0f)); 
-    displayMesh(maillages[1], model);
+    glm::vec3 rotationAxes[] = {
+        glm::vec3(1.0f, 1.0f, 2.0f),
+        glm::vec3(0.0f, 2.0f, 0.0f),
+        glm::vec3(1.0f, 0.0f, 1.0f),
+        glm::vec3(1.0f, 1.0f, 0.0f)
+    };
 
-    model = glm::mat4(1.0f);
-    model = glm::translate(model, glm::vec3(-decal, decal, 0.0f));
-    model = glm::rotate(model, glm::degrees(maillages[2].angle), glm::vec3(1.0f, 0.0f, 1.0f));
-    displayMesh(maillages[2], model);
-
-    model = glm::mat4(1.0f);
-    model = glm::translate(model, glm::vec3(decal, -decal, 0.0f));
-    model = glm::rotate(model, glm::degrees(maillages[3].angle), glm::vec3(1.0f, 1.0f, 0.0f));
-    displayMesh(maillages[3], model);
+    for (int i = 0; i < 4; ++i) {
+        glm::mat4 model = glm::mat4(1.0f);
+        model = glm::translate(model, translations[i]);
+        model = glm::rotate(model, glm::degrees(maillages[i].angle), rotationAxes[i]);
+        displayMesh(maillages[i], model);
+    }
 
     glutSwapBuffers();
 }
+
 
 void idle()
 {
@@ -325,7 +324,6 @@ maillage initVAOs(maillage &mesh, const std::string &chemin)
     std::vector<unsigned int> indices(mesh.nbtriangles * 3);
     std::vector<float> normals(nbpoints * 3);
 
-    // std::fill( std::begin( normals ), std::end( normals ), 0.0f );
 
     for (unsigned int i = 0; i < vertices.size(); ++i)
     {
@@ -377,7 +375,7 @@ maillage initVAOs(maillage &mesh, const std::string &chemin)
 
     // calcul du coefficient de mise à l'échelle
 
-    mesh.scale = 1.0f / fmax(dx, fmax(dy, dz));
+    mesh.scale = 2.0f / fmax(dx, fmax(dy, dz));
     std::cout << mesh.scale;
 
     // Calcul des normales.

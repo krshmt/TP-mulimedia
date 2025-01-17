@@ -1,5 +1,0 @@
-/home/iut45/Etudiants/o22202749/Téléchargements/td6-7/build/CMakeFiles/td.dir
-/home/iut45/Etudiants/o22202749/Téléchargements/td6-7/build/CMakeFiles/check.dir
-/home/iut45/Etudiants/o22202749/Téléchargements/td6-7/build/CMakeFiles/test.dir
-/home/iut45/Etudiants/o22202749/Téléchargements/td6-7/build/CMakeFiles/edit_cache.dir
-/home/iut45/Etudiants/o22202749/Téléchargements/td6-7/build/CMakeFiles/rebuild_cache.dir
