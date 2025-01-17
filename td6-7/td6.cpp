@@ -178,7 +178,7 @@ void display() {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     view = glm::lookAt(globalcamera.Position, globalcamera.Position + globalcamera.Front, globalcamera.Up);
 
-    float decal = 1.0f;
+    float decal = 1.5f;
 
     glm::vec3 translations[] = {
         glm::vec3(-decal, -decal, 0.0f),
